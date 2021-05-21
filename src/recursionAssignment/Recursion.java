@@ -3,7 +3,7 @@ package recursionAssignment;
 public class Recursion{
 
   public static int countHi(String str){
-    
+
     if(str.equals("")) {
       return 0; 
     } else if (str.substring(0,1).equals("h")&& str.substring(1,2).equals("i")){
@@ -25,6 +25,22 @@ public class Recursion{
     }
 
     return str.charAt(0) + changePi(str.substring(1));
+
+  }
+
+
+
+
+  public static String stringClean(String str){
+    if(str.equals("")){
+      return ""; 
+    } else if(str.substring(1).equals("")){
+      return str.substring(0,1) + stringClean(str.substring(1));
+    } else if(str.substring(0,1).equals(str.substring(1,2))){
+      return stringClean(str.substring(1));
+    } else{
+      return str.substring(0,1)+ stringClean(str.substring(1)); 
+    }
 
   }
 

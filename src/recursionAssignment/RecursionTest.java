@@ -22,8 +22,8 @@ public class RecursionTest{
     public void Test3(){
       assertEquals(2, Recursion.countHi("xhixhix"));
     }
-    
-   // Problem Set 2
+
+    // Problem Set 2
 
     @Test
     public void Test4(){
@@ -44,5 +44,21 @@ public class RecursionTest{
     public void Test7(){
       assertEquals("3.143.14", Recursion.changePi("pipi"));
     }
-        
+
+    //Problem set 3
+    @Test
+    public void Test8(){
+      assertEquals("yza", Recursion.stringClean("yyzzza"));
+    }
+
+    @Test
+    public void Test9(){
+      assertEquals("abcd", Recursion.stringClean("abbbcdd"));
+    }
+
+    @Test
+    public void Test10(){
+      assertEquals("Helo", Recursion.stringClean("Hello"));
+    }
+
 }
