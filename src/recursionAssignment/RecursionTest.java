@@ -23,6 +23,26 @@ public class RecursionTest{
       assertEquals(2, Recursion.countHi("xhixhix"));
     }
     
- 
+   // Problem Set 2
+
+    @Test
+    public void Test4(){
+      assertEquals("", Recursion.changePi(""));
+    }
+
+    @Test
+    public void Test5(){
+      assertEquals("3.14", Recursion.changePi("pi"));
+    }
+
+    @Test
+    public void Test6(){
+      assertEquals("3.14p", Recursion.changePi("pip"));
+    }
+
+    @Test
+    public void Test7(){
+      assertEquals("3.143.14", Recursion.changePi("pipi"));
+    }
         
 }
