@@ -6,6 +6,8 @@
 [3. Solution Communication](#3-solution-communication)  
 
 
+
+
 ## 1. Choose Problems
 You will choose one problem from each of the three problem sets.
 
